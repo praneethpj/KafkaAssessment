@@ -24,6 +24,6 @@ mvn spring-boot:run
 
 [Postman Collection ](KafkaAssement.postman_collection.json) 
 
-![Screen shot ](ss.png)
+![Screen shot ](ss.PNG)
 
 
