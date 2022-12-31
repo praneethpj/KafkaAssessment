@@ -1,0 +1,57 @@
+{
+	"info": {
+		"_postman_id": "7610b9be-6fd9-4864-ad66-9a42dd5aebb8",
+		"name": "KafkaAssement",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "12985303"
+	},
+	"item": [
+		{
+			"name": "Publish Transaction",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"transactionAmount\":20.00,\r\n    \"cardNumber\":1234567890,\r\n    \"cardBalance\":21.30\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/transaction/publish",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"transaction",
+						"publish"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All records",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/transaction/allrecords",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"transaction",
+						"allrecords"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
